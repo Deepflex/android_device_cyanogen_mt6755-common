@@ -190,6 +190,7 @@
 /dev/pro_info(/.*)? u:object_r:pro_info_device:s0
 /dev/protect_f(/.*)? u:object_r:protect_f_device:s0
 /dev/protect_s(/.*)? u:object_r:protect_s_device:s0
+/protect_s/properties(/.*)? u:object_r:persist_property_file:s0
 /dev/psaux(/.*)? u:object_r:psaux_device:s0
 /dev/ptmx(/.*)? u:object_r:ptmx_device:s0
 /dev/ptyp.* u:object_r:ptyp_device:s0

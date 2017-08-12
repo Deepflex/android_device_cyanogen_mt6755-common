@@ -293,3 +293,6 @@ allow system_server mtkFlpDaemon_data_file:dir rw_dir_perms;
 
 binder_call(system_server, etsd)
 allow system_server etsd_service:service_manager find;
+
+#Persist
+allow system_server protect_s_data_file:dir r_dir_perms;
