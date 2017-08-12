@@ -65,11 +65,16 @@ PRODUCT_PACKAGES += \
     libtinyxml \
     libfs_mgr
 
-PRODUCT_PACKAGES += \
-
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/audio_device.xml:system/etc/audio_device.xml \
-    $(LOCAL_PATH)/configs/audio_em.xml:system/etc/audio_em.xml
+    $(LOCAL_PATH)/audio/a2dp_audio_policy_configuration.xml:system/etc/a2dp_audio_policy_configuration.xml \
+    $(LOCAL_PATH)/audio/audio_device.xml:system/etc/audio_device.xml \
+    $(LOCAL_PATH)/audio/audio_effects.conf:system/etc/audio_effects.conf \
+    $(LOCAL_PATH)/audio/audio_em.xml:system/etc/audio_em.xml \
+    $(LOCAL_PATH)/audio/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml \
+    $(LOCAL_PATH)/audio/audio_policy_volumes.xml:system/etc/audio_policy_volumes.xml \
+    $(LOCAL_PATH)/audio/default_volume_tables.xml:system/etc/default_volume_tables.xml \
+    $(LOCAL_PATH)/audio/r_submix_audio_policy_configuration.xml:system/etc/r_submix_audio_policy_configuration.xml \
+    $(LOCAL_PATH)/audio/usb_audio_policy_configuration.xml:system/etc/usb_audio_policy_configuration.xml
 
 # Display
 PRODUCT_PACKAGES += \
@@ -145,8 +150,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_codecs.xml:system/etc/media_codecs.xml \
     $(LOCAL_PATH)/configs/media_codecs_mediatek_audio.xml:system/etc/media_codecs_mediatek_audio.xml \
     $(LOCAL_PATH)/configs/media_codecs_mediatek_video.xml:system/etc/media_codecs_mediatek_video.xml \
-    $(LOCAL_PATH)/configs/mtk_omx_core.cfg:system/etc/mtk_omx_core.cfg \
-    $(LOCAL_PATH)/configs/audio_policy.conf:system/etc/audio_policy.conf
+    $(LOCAL_PATH)/configs/mtk_omx_core.cfg:system/etc/mtk_omx_core.cfg
 
 # Build proprietary bits when available
 ifneq ($(MTKPATH),)

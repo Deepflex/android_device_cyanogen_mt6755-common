@@ -3,7 +3,7 @@
     <versioncontrol value="1.01">
     </versioncontrol>
     <!-- These are the initial mixer settings -->
-    <kctl name="Audio_Speaker_class_Switch" value="CLASSAB" />
+    <kctl name="Audio_Speaker_class_Switch" value="CALSSD" />
   	<!--headphone output-->    
     <path name="headphone_output" value="turnon">
         <kctl name="Audio_Amp_R_Switch" value="On" />
@@ -22,12 +22,12 @@
     </path>
    <!-- 2-in-1 speaker output-->        
     <path name="two_in_one_speaker_output" value="turnon">
+        <kctl name="Audio_Speaker_class_Switch" value="RECEIVER" />
         <kctl name="Speaker_Amp_Switch" value="On" />
-        <kctl name="Audio_Speaker_class_Switch" value="CLASSAB" />
     </path>
     <path name="two_in_one_speaker_output" value="turnoff">
-        <kctl name="Audio_Speaker_class_Switch" value="RECEIVER" />
         <kctl name="Speaker_Amp_Switch" value="Off" />
+        <kctl name="Audio_Speaker_class_Switch" value="CALSSD" />
     </path>
    <!--speaker output-->
     <path name="speaker_output" value="turnon">
