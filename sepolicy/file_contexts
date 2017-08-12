@@ -378,6 +378,7 @@
 /sys/bus/platform/drivers/mtk-kpd(/.*)?	u:object_r:sysfs_keypad_file:s0
 /sys/power/vcorefs/pwr_ctrl -- u:object_r:sysfs_vcorefs_pwrctrl:s0
 /sys/devices/virtual/misc/scp(/.*)?  u:object_r:sysfs_scp:s0
+/sys/devices/platform/mtk_disp_mgr.0/rgb       u:object_r:livedisplay_sysfs:s0
 
 
 #############################
