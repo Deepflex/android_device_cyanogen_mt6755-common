@@ -33,5 +33,3 @@ allow ged_srv self:netlink_kobject_uevent_socket { bind create setopt read};
 allow ged_srv property_socket:sock_file write;
 allow ged_srv mtk_sf_prop:property_service set;
 allow ged_srv init:unix_stream_socket connectto;
-
-allow ged_srv debugfs:file { write open getattr };
