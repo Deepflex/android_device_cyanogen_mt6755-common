@@ -7,7 +7,7 @@ LOCAL_SRC_FILES := \
     mtk_ui.cpp \
     mtk_audio.cpp \
     mtk_omx.cpp \
-	mtk_wvm.cpp \
+    mtk_wvm.cpp \
     icu55.c
 
 # only for 64bit libraries
