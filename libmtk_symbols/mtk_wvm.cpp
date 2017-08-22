@@ -1,4 +1,6 @@
 #include <stdint.h>
+#include <media/IMediaSource.h>
+#include <media/stagefright/MediaSource.h>
 
 extern "C"{
     extern void _ZNK7android11MediaSource11ReadOptions9getSeekToEPxPNS1_8SeekModeE(void * obj, int64_t time_us, android::MediaSource::ReadOptions::SeekMode mode) {
